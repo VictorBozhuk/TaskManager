@@ -20,6 +20,7 @@
                     SelectedItem="{Binding SelectedSubject}"
                     Grid.Row="0"
                     HorizontalContentAlignment="Stretch"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                     >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -74,7 +75,7 @@
                                             <ColumnDefinition Width="40"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
                                             <TextBlock Style="{StaticResource NameOfFields}" Text="Lector"/>
                                             <TextBlock Style="{StaticResource NameOfFields}" Text=": "/>
                                         </StackPanel>
@@ -88,7 +89,7 @@
                                             <ColumnDefinition Width="50"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
                                             <TextBlock Style="{StaticResource NameOfFields}" Text="Teacher"/>
                                             <TextBlock Style="{StaticResource NameOfFields}" Text=": "/>
                                         </StackPanel>
@@ -102,11 +103,12 @@
                                             <ColumnDefinition Width="100"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
                                             <TextBlock Style="{StaticResource NameOfFields}" Text="Date of lection"/>
                                             <TextBlock Style="{StaticResource NameOfFields}" Text=": "/>
                                         </StackPanel>
                                         <TextBlock
+                                            TextWrapping="Wrap"
                                             Grid.Column="1"
                                             Text="{Binding Path=DateLection}"
                                             />
@@ -116,11 +118,12 @@
                                             <ColumnDefinition Width="100"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
                                             <TextBlock Style="{StaticResource NameOfFields}" Text="Date of practice"/>
                                             <TextBlock Style="{StaticResource NameOfFields}" Text=": "/>
                                         </StackPanel>
                                         <TextBlock
+                                            TextWrapping="Wrap"
                                             Grid.Column="1"
                                             Text="{Binding Path=DatePractice}"
                                             />

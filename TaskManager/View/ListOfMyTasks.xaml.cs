@@ -24,6 +24,7 @@ namespace TaskManager.View
             DataContext = new ListOfMyTasksViewModel();
         }
 
+
         private void SelecteRow(object sender, RoutedEventArgs e)
         {
             GetParents(sender);
