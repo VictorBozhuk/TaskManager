@@ -10,7 +10,7 @@ Program for managing, filtering homework for the university. The user can create
 ## Patterns
 * MVVM
 * Repository
-* Singelton
+* Singleton
 
 ## Set up
 
